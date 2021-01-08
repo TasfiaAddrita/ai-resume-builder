@@ -1,28 +1,34 @@
-console.log("Hello world");
-
-const express = require("express");
-const passport = require("passport");
-const path = require("path");
-const cors = require("cors");
-const LinkedInStrategy = require("passport-linkedin-oauth2").Strategy;
-const linkedin = require("./linkedin")
 require("dotenv").config();
+// const path = require("path");
+const express = require("express");
+const request = require("request");
+const bodyParser = require("body-parser");
+
+const routes = require("./routes");
 
 const app = express();
 const port = 5000;
 
-// app.set("view engine", "handlebars");
+/**
+ * -----------------------------------------------------------------------------
+ * Setup
+ * -----------------------------------------------------------------------------
+ */
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
+// app.set("view engine", "handlebars");
 
-const LINKEDIN_CLIENT_ID = process.env.LINKEDIN_CLIENT_ID;
-const LINKEDIN_CLIENT_SECRET = process.env.LINKEDIN_CLIENT_SECRET;
-const LINKEDIN_REDIRECT_URI = process.env.LINKEDIN_REDIRECT_URI;
-// https://stackoverflow.com/questions/49944387/how-to-correctly-use-axios-params-with-arrays for multiple scopes
-const LINKEDIN_SCOPE = "r_liteprofile";
+/**
+ * -----------------------------------------------------------------------------
+ * Passport Code
+ * -----------------------------------------------------------------------------
+ */
 
-app.use(cors());
+const passport = require("passport");
+const LinkedInStrategy = require("passport-linkedin-oauth2").Strategy;
 
-// passport 
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -37,10 +43,10 @@ passport.deserializeUser(function (obj, cb) {
 passport.use(
   new LinkedInStrategy(
     {
-      clientID: LINKEDIN_CLIENT_ID,
-      clientSecret: LINKEDIN_CLIENT_SECRET,
-      callbackURL: LINKEDIN_REDIRECT_URI,
-      scope: ["r_liteprofile"]
+      clientID: process.env.LINKEDIN_CLIENT_ID,
+      clientSecret: process.env.LINKEDIN_CLIENT_SECRET,
+      callbackURL: process.env.LINKEDIN_REDIRECT_URI,
+      scope: ["r_liteprofile"],
     },
     function (token, tokenSecret, profile, done) {
       return done(null, profile);
@@ -48,13 +54,45 @@ passport.use(
   )
 );
 
-// routes
-app.use("/linkedin", linkedin.controller);
+/**
+ * -----------------------------------------------------------------------------
+ * Cross Origin Requests
+ * -----------------------------------------------------------------------------
+ */
+
+const cors = require("cors");
+
+app.use(cors());
+
+app.all("/*", function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
+
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
+
+app.options("*", cors());
+
+/**
+ * -----------------------------------------------------------------------------
+ * Routes
+ * -----------------------------------------------------------------------------
+ */
+
+app.use("/auth", routes.auth);
+app.use("/linkedin", routes.linkedin);
 
 app.get("/", (req, res) => {
   res.send("HOME PAGE");
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`App listening at http://localhost:${port}`);
 });

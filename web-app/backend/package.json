@@ -8,6 +8,7 @@
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
+  "proxy": "http://localhost:3000",
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -16,7 +17,8 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongodb": "^3.6.3",
-    "mongoose": "^5.11.10"
+    "mongoose": "^5.11.10",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 class LinkedInButton extends Component {
   constructor(props) {
@@ -9,12 +10,16 @@ class LinkedInButton extends Component {
   }
 
   callAPI() {
-    fetch("http://localhost:5000/linkedin")
-      .then(res => {
+    axios("http://localhost:5000/auth/linkedin", {
+      headers: { "Access-Control-Allow-Origin": "*" },
+    })
+      // fetch("http://localhost:5000/linkedin/success")
+      .then((res) => {
         console.log(res);
-        // res.text()
-      })
-      // .then(res => this.setState({ apiResponse: res}))
+        // res.json()
+      });
+      // .then(res => this.setState({ apiResponse: res.success}))
+      // .then(res => console.log(res))
       // .catch(err => err);
   }
 

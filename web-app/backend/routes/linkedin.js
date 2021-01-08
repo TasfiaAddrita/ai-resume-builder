@@ -4,22 +4,25 @@ const passport = require("passport");
 
 let router = express.Router();
 
-router.get("/", 
-  passport.authenticate("linkedin", {
-    // scope: ["r_liteprofile"]
-    // state: "SOME STATE"
-  })
-);
+// router.get("/", 
+//   passport.authenticate("linkedin", {
+//     // scope: ["r_liteprofile"]
+//     // state: "SOME STATE"
+//   }, function (res) {
+//     console.log("I PASSED FIRST AUTH LINK");
+//   })
+// );
 
-router.get("/callback", 
-  passport.authenticate("linkedin", {
-    successRedirect: "/linkedin/me",
-    failureRedirect: "/linkedin/failure"
-  })
-);
+// router.get("/callback", 
+//   passport.authenticate("linkedin", {
+//     successRedirect: "/linkedin/success",
+//     failureRedirect: "/linkedin/failure"
+//   })
+// );
 
 router.get("/success", (req, res) => {
-  res.send("<h1>I successfully connected to LinkedIn")
+  // res.send("<h1>I successfully connected to LinkedIn")
+  res.json({success: "SUCCESS"})
 });
 
 router.get("/failure", (req, res) => {
