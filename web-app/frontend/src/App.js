@@ -1,14 +1,12 @@
-import LinkedInButton from "./components/LinkedInButton";
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Auth from "./components/auth/Auth"
 
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div>
-      <LinkedInButton />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Auth />
+    );
+  }
 }
-
 export default App;

@@ -1,0 +1,13 @@
+.landing-main {
+  height: 100vh;
+  background:linear-gradient(to bottom right,#64E8DE,#8A64EB);
+}
+
+.right {
+
+}
+
+.left {
+    height: 100vh;
+    background:linear-gradient(to bottom right,#64E8DE,#8A64EB);
+}
