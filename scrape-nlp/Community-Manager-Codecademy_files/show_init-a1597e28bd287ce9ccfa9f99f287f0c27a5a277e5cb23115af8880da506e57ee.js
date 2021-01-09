@@ -1,0 +1,1 @@
+$(function(){JBEN.DropZones.setup($(".drop-zone")),JBEN.Education.init(),JBEN.Employment.init(),JBEN.LinkedinProfile.setup(),JBEN.PublicJobBoard.UncacheableAttributes.init(),JBEN.PublicJobBoard.raceAndEthnicityFilters(),JBEN.QuestionDropdowns.init(),JBEN.SeekProfile.setup(),JBEN.DemographicQuestions.setup(),JBEN.Location.setup()});
