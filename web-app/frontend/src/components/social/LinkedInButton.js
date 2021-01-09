@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
+import logo from "../../images/linkedin-signin.png";
+import "./social.css";
 
 class LinkedInButton extends Component {
   constructor(props) {
@@ -41,17 +43,8 @@ class LinkedInButton extends Component {
 
   render() {
     return (
-      <div
-        className="linkedin-btn"
-        // href={"http://localhost:5000/auth/linkedin/signup"}
-      >
-        <input
-          onClick={this._handleSignInClick}
-          type="image"
-          src="https://content.linkedin.com/content/dam/developer/global/en_US/site/img/signin-button.png"
-        />
-        <button onClick={this.getProfile}>Get profile</button>
-        <h1>{this.state.apiResponse}</h1>
+      <div /* href={"http://localhost:5000/auth/linkedin/signup"} */ >
+        <input onClick={this._handleSignInClick} type="image" src={logo} className="linkedin-btn"/>
       </div>
     );
   }

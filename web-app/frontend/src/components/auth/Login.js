@@ -6,7 +6,7 @@ import Layout from "./Layout";
 class Login extends Component {
   render() {
     return (
-      <Layout header="Dashboard Log in">
+      <Layout header="Log in">
         <Form.Input
           fluid
           icon="user"

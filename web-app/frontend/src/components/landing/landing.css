@@ -1,13 +1,21 @@
-.landing-main {
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+/* .landing-main {
   height: 100vh;
   background:linear-gradient(to bottom right,#64E8DE,#8A64EB);
+} */
+
+.right-side {
+    /* height: 100%; */
+    height: 100vh;
 }
 
-.right {
-
-}
-
-.left {
+.left-side {
+    /* height: 100%; */
     height: 100vh;
     background:linear-gradient(to bottom right,#64E8DE,#8A64EB);
+    padding: 20px;
+    /* margin: 20px; */
 }

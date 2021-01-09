@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { Form, Header } from "semantic-ui-react";
+import { Form, Header, Divider } from "semantic-ui-react";
 import "./auth.css";
-import logo from "../../images/logo.png";
+// import logo from "../../images/linkedin-signin.png";
+import LinkedInButton from "../social/LinkedInButton"
 
 class Layout extends Component {
   render() {
@@ -9,7 +10,8 @@ class Layout extends Component {
       <div className="auth-main">
         <div class="auth-content">
           <div className="auth-card">
-            <img src={logo} alt="Logo" className="auth-logo" />
+            <LinkedInButton />
+            <Divider horizontal>Or</Divider>
             <Header as="h2" color="black" textAlign="center">
               {this.props.header}
             </Header>
