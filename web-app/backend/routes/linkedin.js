@@ -7,10 +7,11 @@ let router = express.Router();
 router.get("/success", (req, res) => {
   // res.send("<h1>I successfully connected to LinkedIn")
   res.json({ res: "auth successful!" });
+  // res.send("auth successful!")
 })
 
 router.get("/failure", (req, res) => {
-  res.send("<h1>I failed :(");
+  res.send("<h1>I failed :(</h1>");
 });
 
 router.get("/me", (req, res) => {
@@ -24,12 +25,12 @@ router.get("/me", (req, res) => {
   axios
     .get("https://api.linkedin.com/v2/me", config)
     .then((response) => {
-      console.log(response.data);
-      res.json({res: "successfully got linkedin profile!"})
+      // console.log(response.data);
+      res.json("successfully got linkedin profile!")
     })
     .catch(err => {
-      console.log("ERROR", err)
-      res.json({ res: "failed, did not get linkedin profile :(" });
+      // console.log("ERROR", err)
+      res.json("failed, did not get linkedin profile :(");
     });
 
 })

@@ -5,26 +5,34 @@ class LinkedInButton extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      apiResponse: "derp"
+      apiResponse: "derp",
     };
   }
 
   callAPI() {
-    fetch("http://localhost:5000/auth/linkedin")
-      .then((res) => {
-        console.log(res);
-        // res.json()
-      })
-      // .then(res => this.setState({ apiResponse: res.success }))
-      // .then(res => console.log(res))
-      // .catch(err => err);
+    axios("http://localhost:5000/auth/linkedin/signup").then((res) => {
+      console.log(res);
+      // res.json()
+    });
+    // .then((res) => {
+    //   console.log(res)
+    // })
+    // .then(res => this.setState({ apiResponse: res.success }))
+    // .then(res => console.log(res))
+    // .catch(err => err);
   }
 
+  _handleSignInClick = () => {
+    // Authenticate using via passport api in the backend
+    // Open Twitter login page
+    // Upon successful login, a cookie session will be stored in the client
+    window.open("http://localhost:5000/auth/linkedin", "_self");
+  };
+
   getProfile() {
-    fetch("http://localhost:5000/linkedin/me")
-    .then(res => {
-      console.log(res)
-    })
+    axios("http://localhost:5000/linkedin/me").then((res) => {
+      console.log(res);
+    });
   }
 
   componentDidMount() {
@@ -33,8 +41,12 @@ class LinkedInButton extends Component {
 
   render() {
     return (
-      <div className="linkedin-btn" onClick={this.callAPI}>
+      <div
+        className="linkedin-btn"
+        // href={"http://localhost:5000/auth/linkedin/signup"}
+      >
         <input
+          onClick={this._handleSignInClick}
           type="image"
           src="https://content.linkedin.com/content/dam/developer/global/en_US/site/img/signin-button.png"
         />

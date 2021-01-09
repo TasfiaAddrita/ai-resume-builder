@@ -3,6 +3,10 @@ const passport = require("passport");
 
 let router = express.Router();
 
+// router.get("/linkedin/signup", (req, res) => {
+//   res.redirect("/auth/linkedin");
+// })
+
 router.get("/linkedin", passport.authenticate("linkedin"));
 
 router.get("/linkedin/callback",
