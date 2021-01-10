@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Form, Header, Divider } from "semantic-ui-react";
 import "./auth.css";
-// import logo from "../../images/linkedin-signin.png";
 import LinkedInButton from "../social/LinkedInButton"
 
 class Layout extends Component {
