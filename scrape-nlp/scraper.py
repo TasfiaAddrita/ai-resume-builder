@@ -18,3 +18,5 @@ print(soup.find(id='duties').p.text, end='\n\n') #summary text
 print(soup.findAll('h3')[2].text) #responsibilities title
 print(soup.findAll(id='duties')[1].text) #responsibilities text
 print(soup.find(id="qualifications").text) # qualifications title and text
+print(soup.find(id="requirements").findAll('div')[2].h3.text) #education title
+print(soup.find(id="requirements").findAll('div')[2].p.text)  #education text
