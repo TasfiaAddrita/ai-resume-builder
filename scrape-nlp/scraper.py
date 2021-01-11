@@ -36,6 +36,7 @@ def scrape():
     for data in datas:
         file.write(data)
     file.close()
+    return datas
 
 
 

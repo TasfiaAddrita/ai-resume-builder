@@ -23,9 +23,8 @@
 <body>
     {% block body %}
         <h1>Welcome to the ~Generator~</h1>
-        <a href="{{ url_for('home', runs=random_runs) }}"><type="button" class="btn btn-danger">REFRESH</button></a><br><br>    
+        <a href="{{ url_for('scrape', runs=random_runs) }}"><type="button" class="btn btn-danger">REFRESH</button></a><br><br>    
         Scrape Results:   <br><br>{{output}} <br><br>
-        Output Sentence:   <br><br>{{resume}} <br><br>
     {% endblock %}
 </body>
 </html>
