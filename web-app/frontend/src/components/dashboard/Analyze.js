@@ -1,48 +1,24 @@
 import React, { Component } from "react";
-import NavSidebar from "./Sidebar";
-
+import { Grid, Form, Header, Input } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
-
-import {
-  Button,
-  Divider,
-  Grid,
-  Header,
-  Icon,
-  Input,
-  Image,
-  Label,
-  Menu,
-} from "semantic-ui-react";
-
 import "./dashboard.css";
 
-import placeholder from "../../images/square-image.png";
-
-class Dashboard extends Component {
+class Analyze extends Component {
   render() {
     return (
       <Grid.Column computer={14} floated="right" id="content">
-        <Grid padded>
-          <Grid.Row>
-            <Header dividing size="huge" as="h3">
-              ANALYZE
-            </Header>
-          </Grid.Row>
-          <Grid.Row textAlign="center">
-            <Grid.Column computer={4}>
-              <Image centered size="small" src={placeholder} />
-              <Label basic size="large">
-                Label
-              </Label>
-              <p>Something else</p>
-            </Grid.Column>
-          </Grid.Row>
-          <Divider section hidden />
-        </Grid>
+        <Header as="h1">Analyze</Header>
+        <Form>
+          <Form.Group widths="equal">
+            <Form.Field inline>
+              <Input fluid label="Job Website" />
+            </Form.Field>
+            <Form.Button inline color="teal">Submit</Form.Button>
+          </Form.Group>
+        </Form>
       </Grid.Column>
     );
   }
 }
 
-export default Dashboard;
+export default Analyze;

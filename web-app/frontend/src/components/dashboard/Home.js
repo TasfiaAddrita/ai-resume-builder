@@ -1,45 +1,32 @@
 import React, { Component } from "react";
-import NavSidebar from "./Sidebar";
-
-import "semantic-ui-css/semantic.min.css";
-
-import {
-  Button,
-  Divider,
-  Grid,
-  Header,
-  Icon,
-  Input,
-  Image,
-  Label,
-  Menu,
-} from "semantic-ui-react";
-
+import {Grid, Header, Icon, Card, Segment, Divider, Image} from "semantic-ui-react";
+import placeholder from "../../images/resume-placeholder.jpeg";
 import "./dashboard.css";
-
-import placeholder from "../../images/square-image.png";
+import "semantic-ui-css/semantic.min.css";
 
 class Dashboard extends Component {
   render() {
     return (
       <Grid.Column computer={14} floated="right" id="content">
-        <Grid padded>
-          <Grid.Row>
-            <Header dividing size="huge" as="h3">
-              HOME
-            </Header>
-          </Grid.Row>
-          <Grid.Row textAlign="center">
-            <Grid.Column computer={4}>
-              <Image centered size="small" src={placeholder} />
-              <Label basic size="large">
-                Label
-              </Label>
-              <p>Something else</p>
-            </Grid.Column>
-          </Grid.Row>
-          <Divider section hidden />
-        </Grid>
+        <Card.Group itemsPerRow={4}>
+          <Card>
+            <Image src={placeholder} />
+            <Card.Content>
+              <Card.Header>Data Science v1</Card.Header>
+            </Card.Content>
+          </Card>
+          {/* <Segment placeholder> */}
+            <Card>
+              <Card.Content>
+              <Header icon>
+                <Icon name="plus square outline" />
+                <Divider hidden />
+                Create a resume
+              </Header>
+              </Card.Content>
+            </Card>
+          {/* </Segment> */}
+        </Card.Group>
       </Grid.Column>
     );
   }

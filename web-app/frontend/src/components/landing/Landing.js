@@ -3,6 +3,8 @@ import { Form, Grid, Header, Icon, List } from "semantic-ui-react";
 import "./landing.css";
 import Auth from "../auth/Auth";
 import logo from "../../images/logo-white-title.png"
+import Login from "../auth/Login";
+import Signup from "../auth/Signup";
 
 class Landing extends Component {
   render() {
@@ -62,7 +64,7 @@ class Landing extends Component {
 
             <Grid.Column width={6}>
               <div className="right-side">
-                <Auth />
+                <Login />
               </div>
             </Grid.Column>
           </Grid.Row>

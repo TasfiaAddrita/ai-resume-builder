@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NavSidebar from "./Sidebar";
+import NavSidebar from "./NavSidebar";
 
 import "semantic-ui-css/semantic.min.css";
 
@@ -19,7 +19,7 @@ import "./dashboard.css";
 
 import placeholder from "../../images/square-image.png";
 
-class Dashboard extends Component {
+class Settings extends Component {
   render() {
     return (
       <Grid.Column computer={14} floated="right" id="content">
@@ -45,4 +45,4 @@ class Dashboard extends Component {
   }
 }
 
-export default Dashboard;
+export default Settings;

@@ -5,6 +5,7 @@ import Home from "./Home";
 import Content from "./Content";
 import Analyze from "./Analyze";
 import Settings from "./Settings";
+import Landing from "../landing/Landing";
 import "./dashboard.css";
 import logo from "../../images/logo-white-title.png";
 
@@ -40,11 +41,9 @@ const NavSidebar = () => (
         </Menu.Item>
       </Menu>
     </Grid.Column>
-
     <Route exact path="/dashboard" component={Home} />
     <Route exact path="/content" component={Content} />
     <Route exact path="/analyze" component={Analyze} />
-    <Route exact path="/settings" component={Settings} />
   </Router>
 );
 

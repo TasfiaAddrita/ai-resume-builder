@@ -31,7 +31,7 @@ class Signup extends Component {
           className="auth-input-field"
         />
 
-        <Link to="/done">
+        <Link to="/dashboard">
           <Button color="teal" fluid size="huge">
             Sign up
           </Button>

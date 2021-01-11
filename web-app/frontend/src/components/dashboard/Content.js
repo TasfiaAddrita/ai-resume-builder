@@ -1,48 +1,25 @@
 import React, { Component } from "react";
-import NavSidebar from "./Sidebar";
-
+import NavSidebar from "./NavSidebar";
+import {Grid, Form, Header} from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
-
-import {
-  Button,
-  Divider,
-  Grid,
-  Header,
-  Icon,
-  Input,
-  Image,
-  Label,
-  Menu,
-} from "semantic-ui-react";
-
 import "./dashboard.css";
+import ExperienceModal from "./ExperienceModal";
+import ProjectModal from "./ProjectModal";
 
-import placeholder from "../../images/square-image.png";
-
-class Dashboard extends Component {
+class Content extends Component {
+  state = {};
+  handleChange = (e, { value }) => this.setState({ value });
   render() {
+    const { value } = this.state;
     return (
-      <Grid.Column computer={14} floated="right" id="content">
-        <Grid padded>
-          <Grid.Row>
-            <Header dividing size="huge" as="h3">
-              CONTENT
-            </Header>
-          </Grid.Row>
-          <Grid.Row textAlign="center">
-            <Grid.Column computer={4}>
-              <Image centered size="small" src={placeholder} />
-              <Label basic size="large">
-                Label
-              </Label>
-              <p>Something else</p>
-            </Grid.Column>
-          </Grid.Row>
-          <Divider section hidden />
-        </Grid>
+      <Grid.Column width={14} floated="right" id="content">
+        <Header as="h2">Experience</Header>
+        <ExperienceModal />
+        <Header as="h2">Projects</Header>
+        <ProjectModal />
       </Grid.Column>
     );
   }
 }
 
-export default Dashboard;
+export default Content;
