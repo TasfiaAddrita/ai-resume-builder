@@ -20,6 +20,7 @@ def ngram():
         if grams not in ngrams.keys():
             ngrams[grams]=[] #make empty if not in ngram
         ngrams[grams].append(words[i+order]) #print next possible char (from ngram[gram[0]])
+    return ngrams
 
 # [print(key, value) for key, value in ngrams.items()]  # printing all ngrams
 # print(n_gram(words, order))    #for function refactoring 
@@ -38,6 +39,7 @@ def generate():
         result += _next   #add to result
         current_gram = result[len(result)-order:len(result)]   # next 3 of the currently picked gram
     print("\n\n Here is your generated resume:\n\n\n" , result)
+    return result
 
 if __name__ == '__main__':
     ngram()
