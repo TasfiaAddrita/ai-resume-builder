@@ -13,7 +13,7 @@ title = soup.find('h1').text
 dept = soup.find('h5', class_='usajobs-joa-banner__dept').text
 loc = soup.find('a', class_='usajobs-joa-banner__agency').text
 print(title, dept, loc)
-
-for header in soup.find_all('h2', class_='usajobs-joa-section__header'):
-    head = header.text
-    print(head)
+print(soup.find(id='duties').h3.text, end='\n\n') #summary title
+print(soup.find(id='duties').p.text, end='\n\n') #summary text
+print(soup.findAll('h3')[2].text) #responsibilities title
+print(soup.findAll(id='duties')[1].text) #responsibilities text
