@@ -1,24 +1,73 @@
 
-                    Computer Scientist, AST, Computer Research and Development 
-                National Aeronautics and Space Administration
-                    Ames Research Center
-                 SummaryThe Intelligent Systems Division at NASA Ames Research Center is seeking applicants for the position of Computer Scientist to support the Center's Intelligent Adaptive Systems (IAS) core competency. This position serves as project/team lead and innovator to guide and create software and tools applicable to the IAS core competency, covering the spectrum of research, design, and development phases, as well as project implementation and operation phases on flight missions.Responsibilities
+                    Operations Research Analyst (Data Scientist) 
+                Department of the Army
+                    United States Army Futures Command
+                 SummaryThis is a Direct Hire Authority (DHA) solicitation utilizing the DHA for Certain Personnel of the DoD Workforce to recruit and appoint qualified candidates to positions in the competitive service.
 
-Serves as team lead and senior software development lead, project manager, principal investigator, deployment lead, and/or laboratory manager providing high-level technical leadership.
-Supports a range of aeronautics/aerospace projects/programs (e.g., aviation, airborne science, small spacecraft, and terrestrial/planetary robotics, quantum computing, biomedical applications for human exploration, and advanced exploration systems).
-Guides others/creates software and tools applicable to the Intelligent Adaptive Systems (IAS), covering the spectrum of research, design, and development phases, as well as project implementation and operation phases on flight missions.
-Develops models, algorithms, hardware and/or software for technologies that function as advisors, advanced automation, and autonomous technologies; for tools and techniques that address the information management lifecycles.
-Develops methods that detect, classify, or predict events of interest in engineered systems; and technologies for automated software engineering that increase the reliability and reduce the cost of software for NASA missions.
-Leads/conducts basic and applied research and technology/prototype development in a wide variety of areas such as intelligent robotic systems, adaptive/optimal control, ground/flight software and data systems, machine learning, and assured autonomy.
-Oversees documentation of project requirements, design, development, testing, use, and deliverables (e.g., software, tools, data). Integrates studies/analysis results into comprehensive technical briefings, reports, and/or papers.
-Leads development of proposal submissions; serves on Agency and government committees and working groups; supports policy development; and participates in roadmap and planning activities.
-Duties described above are at the full-performance level. Duties assigned at a lower grade level will be of more limited scope, performed with less independence and limited complexity; duties will be commensurate with the grade of selected employee.
+About the Position: This position serves as a Operations Research Analyst (Data Scientist) in Army Futures Command (AFC), Data and Decision Sciences Directorate, located in Austin, Texas. Visit us on www.armyfuturescommand.com and join the team leading the Army into the future!Responsibilities
+
+At the full performance level you will be responsible for:
+Ensuring compatibility of development within U.S. Army Futures Command Data Analytics Platform (DAP) architecture.
+Serving as a staff advisor with direct responsibility of performance within the Data and Decision Sciences Directorate devoted to producing agile and dynamic analytics that enable decision-making through the Army's modernization enterprise.
+Developing command-driven analytics for U.S. Army Futures Command Data Analytics Platform (DAP) based on end-user feedback that provides insightful knowledge into answering questions encompassing the Army's modernization enterprise.
+Developing initial prototype analytics that employ statistical methodologies to fused data sources.
+Directing and conducting analysis of research results and data using advanced statistical techniques.
+Collaborating or write academic articles and technical reports describing outcomes of research studies.
+Engaging with others to conduct necessary stakeholder analysis to ensure analytics projects support end-user requirements.
 
 
  Qualifications
 
-                                                In addition to the basic education requirement, you must have one year of specialized experience equivalent to the next lower grade level, which has equipped you with the particular competencies needed to successfully perform the duties of the position described above.To qualify for the GS-14:Specialized experience equivalent to the next lower grade level (GS-13) includes duties such as conducting research and development for intelligent adaptive systems that support either in-flight autonomy or ground-based autonomous support operations;  experience in model, algorithm, hardware and/or software development for engineered or information systems.To qualify for the GS-15:Specialized experience equivalent to the next lower grade level (GS-14) includes duties such as leading, providing technical guidance to, or technical oversight of engineers/scientists researching, designing, analyzing, developing, deploying, and/or operating intelligent adaptive systems that support either in-flight autonomy or ground-based autonomous support operations;  AND experience in model, algorithm, hardware and/or software development for engineered or information systems.Your resume must include a clear and detailed narrative description, in your own words, of how you meet the required specialized experience. Experience statements copied from a position description, vacancy announcement or other reference material constitutes plagiarism and may result in disqualification and losing consideration for the job.Please spell out all acronyms.
+This is an open continuous announcement.
+The first cut-off date is 11/15/2020. After this date additional referral lists will be created every 30 days or as vacancies are available.
+Final application disposition will be completed once all positions have been filled or the announcement reaches the end of the open period stated in the announcement.
+
+Who May Apply: US Citizens
+
+In order to qualify, you must meet the education and/or requirements described below. Experience refers to paid and unpaid experience, including volunteer work done through National Service programs (e.g., Peace Corps, AmeriCorps) and other organizations (e.g., professional; philanthropic; religious; spiritual; community; student; social). You will receive credit for all qualifying experience, including volunteer experience. Your resume must clearly describe your relevant experience; if qualifying based on education, your transcripts will be required as part of your application. Additional information about transcripts is in this document.
+
+Basic Requirement for Operations Research Analyst (Data Scientist):
+
+Degree: Bachelor's degree (or higher degree) in operations research; or a degree with at least 24 semester hours in a combination of operations research, mathematics, probability, statistics, mathematical logic, science, or subject-matter courses requiring substantial competence in college-level mathematics or statistics. At least 3 of the 24 semester hours must have been in calculus.
+
+Some federal jobs allow you to substitute or combine your experience for the required education in order to qualify. For this job, no substitution of education is permitted.
+
+In addition to meeting the basic education requirement above, to qualify for this position you must also meet the specialized experience requirements listed below:
+
+GS-9 
+Specialized Experience: One year of specialized experience which includes applying basic mathematical and statistics to perform routine, scientific or technical tasks or projects involving data collection. This definition of specialized experience is typical of work performed at the second lower grade/level position in the federal service (GS-07).
+
+OR
+
+Education: Master's or equivalent graduate degree or 2 full years of progressively higher level graduate education leading to such a degree in a field which demonstrates the knowledge, skills, and abilities necessary to do the work of the position, such as: computer science, operations research, operations management, mathematics, physics, or engineering.
+
+OR
+
+Combination of Education and Experience: A combination of education and experience may be used to qualify for this position as long as the computed percentage of the requirements is at least 100%. To compute the percentage of the requirements, divide your total months of experience by 12. Then divide the total number of completed graduate semester hours (or equivalent) beyond the first year (total graduate semester hours minus 18) by 18. Add the two percentages.
+
+GS-11
+Specialized Experience: One year of specialized experience which includes applying and adapting analytical, mathematical or statistical techniques to resolve problems or generate ideas for new programs, policy, or approaches to address. This definition of specialized experience is typical of work performed at the second lower grade/level position in the federal service (GS-09).
+
+OR
+
+Education: Ph.D. or equivalent doctoral degree or 3 full years of progressively higher level graduate education leading to such a degree in a field which demonstrates the knowledge, skills, and abilities necessary to do the work of the position, such as: computer science, operations research, operations management, mathematics, physics, or engineering.
+
+OR
+
+Combination of Education and Experience: A combination of education and experience may be used to qualify for this position as long as the computed percentage of the requirements is at least 100%. To compute the percentage of the requirements, divide your total months of experience by 12. Then divide the total number of completed graduate semester hours (or equivalent) beyond the second year (total graduate semester hours minus 36) by 18. Add the two percentages.
+
+GS-12 
+Specialized Experience: One year of specialized experience which includes experience interpreting policy and regulation to provide advisory; develop changes to plans and/or data collection methodology and provide recommendations for improvements to meet program objectives. This definition of specialized experience is typical of work performed at the next lower grade/level position in the federal service (GS-11).
+
+Some federal jobs allow you to substitute your education for the required experience in order to qualify. For this job, at the GS-12 grade level, you must meet the qualification requirement using experience alone--no substitution of education for experience is permitted.
+
+GS-13
+Specialized Experience: One year of specialized experience which includes identifying, developing, and integrating information through various data collection/analysis procedures or technologies; and performing programming using data science software with a focus on open-source languages (e.g. R, Python, Scala, Julia). This definition of specialized experience is typical of work performed at the next lower grade/level position in the federal service (GS-12).
+
+Some federal jobs allow you to substitute your education for the required experience in order to qualify. For this job, at the GS-13 grade level, you must meet the qualification requirement using experience alone--no substitution of education for experience is permitted.
+
+You will be evaluated on the basis of your level of competency in the following areas:
+Problem SolvingResearch and Data AnalysisTechnical CompetenceWritten Communication
 
 Education
-                                                Basic Education Requirement: A bachelor's degree from an accredited college or university with major study in Aeronautical Engineering, Aeronautics, Aerospace Engineering, Architecture, Astronautical Engineering, Astronautics, Astronomy, Astrophysics, Biomedical Engineering, Ceramic Engineering, Ceramics, Chemical Engineering, Chemistry, Civil Engineering, Computer Engineering, Computer Science*, Life Science, Earth and Planetary Science, Electrical Engineering, Electronics Engineering, Geology, Geophysics, Industrial Engineering, Materials Engineering, Materials Science, Mathematics (Pure or Applied), Applied Mechanics, Engineering Mechanics, Mechanical Engineering, Metallurgical Engineering, Metallurgy, Meteorology, Nuclear Engineering, Nuclear Engineering Physics, Oceanography, Optical Engineering, Physics, Applied Physics, Engineering Physics, Space Science, Structural Engineering, Welding Engineering or other appropriate physical science or engineering field.Degrees in engineering technology are not considered to be qualifying for this position.   *Note: Curriculum must include 30 semester hours of course work in a combination of mathematics, statistics and computer science that provided in-depth knowledge of the following: (1) theoretical foundations and practical applications of computer science, including digital computer system architecture and system software organization, the representation and transformation of information structures and the theoretical models for such representations and transformations; and (2) essential mathematical and statistical techniques. Of the 30 semester hours, 15 must be in any combination of statistics and mathematics which includes differential and integral calculus.U.S. Engineering degrees must have been awarded from a college or university school of engineering with at least one curriculum accredited by the Engineering Accreditation Commission (EAC) of the Accreditation Board for Engineering and Technology (ABET). To find out if a degree meets this requirement, go to http://www.abet.org.  Foreign Engineering degrees must be recognized by a Mutual Recognition Agreement (MRA), often known as accords These are non-governmental agreements among organizations that accredit academic degree programs.  MRAs recognize the substantial equivalence of mature accreditation systems and programs accredited by signatory organizations within their jurisdictions. For a listing of Signatories, please visit, https://www.abet.org/global-presence/mutual-recognition-agreements/is-your-program-recognized/. Science and other related degrees must have been awarded from colleges or universities that are accredited by recognized accrediting organizations.  For a list of schools that meet this criteria, go to http://ope.ed.gov/accreditation/. If you are using education completed in foreign colleges or universities to meet the qualification requirements, you must show that the education credentials have been evaluated by a private organization that specializes in interpretation of foreign education programs. These education credentials must be deemed equivalent to that gained in an accredited U.S. education program; or full credit has been given for the courses at a U.S. accredited college or university. For further information, visit: https://www2.ed.gov/about/offices/list/ous/international/usnei/us/edlite-visitus-forrecog.html. All degrees must have been received in the year of, or any year subsequent to the original date of accreditation.Official transcripts will be required at the time of selection to verify that you meet the educational requirement or substitution.
-                                            
+FOREIGN EDUCATION: If you are using education completed in foreign colleges or universities to meet the qualification requirements, you must show the education credentials have been evaluated by a private organization that specializes in interpretation of foreign education programs and such education has been deemed equivalent to that gained in an accredited U.S. education program; or full credit has been given for the courses at a U.S. accredited college or university. For further information, visit: http://www.ed.gov/about/offices/list/ous/international/usnei/us/edlite-visitus-forrecog.html
