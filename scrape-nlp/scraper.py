@@ -3,9 +3,7 @@ import requests
 
 # Test URL https://www.usajobs.gov/GetJob/ViewDetails/576145500#locations
 
-# with open("nasa.htm") as html_file:
-#     soup = BeautifulSoup(html_file, 'lxml')
-# print(soup.prettify())
+
 input = input('Enter URL: ')
 url = requests.get(input).text
 soup = BeautifulSoup(url, 'lxml')
