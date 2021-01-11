@@ -1,5 +1,12 @@
 from bs4 import BeautifulSoup
 import requests
+from nltk.corpus import stopwords
+import sys
+import csv
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
 
 # Test URL https://www.usajobs.gov/GetJob/ViewDetails/576145500#locations
 
@@ -38,6 +45,59 @@ def scrape():
     file.close()
     return datas
 
+def eda():
+    output = open("nasa-test.txt", 'r')
+    output_lines = output.read().lower()
+    output_words = output_lines.split()
+    output_words = [word for word in output_words if word not in stopwords.words('english')]
+
+    # UNIQUE WORD COUNT
+    def unique_words(histogram):
+        count = 0
+        for i in range(len(histogram)):
+            j=0
+            for j in range(i):
+                if (histogram[i] == histogram[j]):
+                    break
+            if (i == j + 1): 
+                count += 1
+        return count
+    print("\n\n Unique Words Count: \n", unique_words(output_words))
+
+
+    # HISTOGRAM
+    def histogram(source):
+        hist = {}
+        b = []
+        for i in source:
+            hist[i] = hist.get(i, 0) + 1
+            a = i, ' => ', hist[i]
+            b.append(a)
+        return b
+    print("\n\n Histogram:\n", histogram(output_words))
+
+
+
+    # CREATE CSV
+    # opening the csv file in 'w+' mode 
+    data = open('data.csv', 'w+', newline ='') 
+
+    # writing the data into the file 
+    with data:     
+        write = csv.writer(data) 
+        write.writerows(histogram(output_words)) 
+
+
+    # DATAFRAME
+    data = pd.read_csv('data.csv', header=None)
+    print(data.columns)
+    data.head()
+
+    # PLOT
+    top_10 = data[0].value_counts()[:10]
+    plt.bar(top_10, height = 1)
+    top_10.plot(kind='bar')
+    plt.show(top_10)
 
 
 if __name__ == '__main__':
@@ -45,3 +105,4 @@ if __name__ == '__main__':
     import Ngram
     Ngram.ngram()
     Ngram.generate()
+    eda()
