@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+ <img width=200px height=200px src="logo-grey-title.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">AI Resume Builder</h3>
@@ -8,15 +8,15 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/TasfiaAddrita/ai-resume-builder.svg)](https://github.com/TasfiaAddrita/ai-resume-builder/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/TasfiaAddrita/ai-resume-builder.svg)](https://github.com/TasfiaAddrita/ai-resume-builder/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> AI resume builder that allows users to input a job description and tailor their resume to the keywords in the description.
     <br> 
 </p>
 
@@ -34,61 +34,44 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+Even before the pandemic started, students and job-seekers struggled to make themselves stand out from thousands of other applicants. 
+<br><br>Unfortunately, not many people know that there is no “one-size-fits-all” resume that they can submit to every company and role they apply to. <br><br>We want to build an app that allows users to build different resumes that are tailored to the company or role they are applying for. For example, if I apply to a Data Science position role at Make School, I should focus on presenting experiences, projects, certifications, etc. that highlight my data science skills as well as any experience that is related to edtech, like tutoring. 
+
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-### Prerequisites
-
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
-
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
+Clone the repo
 
 ```
-Give the example
+git clone https://github.com/TasfiaAddrita/ai-resume-builder.git
 ```
 
-And repeat
+### Dependencies
+
+Download dependencies from __requirements.txt__ with 
 
 ```
-until finished
+pip3 install -r requirements.txt
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## 🎈 Usage <a name="usage"></a>
 
-Add notes about how to use the system.
+Run script with
+
+```
+python3 scraper.py
+```
+
+Enter a job url to begin. The job posting must be from ___USAjobs.com___ website
+
+_Example -> https://www.usajobs.gov/GetJob/ViewDetails/576145500_
+
+Follow instructions in console to see output. 
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
@@ -97,18 +80,18 @@ Add additional notes about how to deploy this on a live system.
 ## ⛏️ Built Using <a name = "built_using"></a>
 
 - [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Python](https://www.python.org/) - Data Science
+- [React](https://reactjs.org/) - Frontend
+
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+- [Tasfia Addrita](https://github.com/TasfiaAddrita) 
+- [Aleia Knight](https://github.com/robotgyal)
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/TasfiaAddrita/ai-resume-builder/contributors) who participated in this project.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+- Thanks for all the developers who created libraries used in this project!
