@@ -16,15 +16,15 @@ class Dashboard extends Component {
             </Card.Content>
           </Card>
           {/* <Segment placeholder> */}
-            <Card>
-              <Card.Content>
+          <Card>
+            <Card.Content>
               <Header icon>
                 <Icon name="plus square outline" />
                 <Divider hidden />
                 Create a resume
               </Header>
-              </Card.Content>
-            </Card>
+            </Card.Content>
+          </Card>
           {/* </Segment> */}
         </Card.Group>
       </Grid.Column>

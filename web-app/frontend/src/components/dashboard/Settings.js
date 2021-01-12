@@ -1,22 +1,7 @@
 import React, { Component } from "react";
-import NavSidebar from "./NavSidebar";
-
+import {Divider, Grid, Header, Image, Label} from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
-
-import {
-  Button,
-  Divider,
-  Grid,
-  Header,
-  Icon,
-  Input,
-  Image,
-  Label,
-  Menu,
-} from "semantic-ui-react";
-
 import "./dashboard.css";
-
 import placeholder from "../../images/square-image.png";
 
 class Settings extends Component {

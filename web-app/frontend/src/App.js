@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import Landing from "./components/landing/Landing";
-import Dashboard from "./components/dashboard/Dashboard";
 import Login from "./components/auth/Login";
 import Signup from "./components/auth/Signup";
 import Home from "./components/dashboard/Home";
 import Content from "./components/dashboard/Content";
 import Analyze from "./components/dashboard/Analyze";
 import Settings from "./components/dashboard/Settings";
-import NavSidebar from "./components/dashboard/NavSidebar"
+import Dashboard from "./components/dashboard/Dashboard"
 
 class App extends Component {
   render() {
@@ -25,7 +24,7 @@ class App extends Component {
       //     <Route exact path="/dashboard" component={Home} />
       //     <Route exact path="/content" component={Content} />
       //     <Route exact path="/analyze" component={Analyze} />
-      //     <NavSidebar />
+      //     <Dashboard />
       //   </Switch>
       // </Router>
       <div className="App">

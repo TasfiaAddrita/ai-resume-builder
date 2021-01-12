@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import NavSidebar from "./NavSidebar";
-import {Grid, Form, Header} from "semantic-ui-react";
-import "semantic-ui-css/semantic.min.css";
-import "./dashboard.css";
+import {Grid, Header} from "semantic-ui-react";
 import ExperienceModal from "./ExperienceModal";
 import ProjectModal from "./ProjectModal";
+import "semantic-ui-css/semantic.min.css";
+import "./dashboard.css";
 
 class Content extends Component {
   state = {};

@@ -5,11 +5,12 @@ import Auth from "../auth/Auth";
 import logo from "../../images/logo-white-title.png"
 import Login from "../auth/Login";
 import Signup from "../auth/Signup";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class Landing extends Component {
   render() {
     return (
-      <div>
+      // <Router>
         <Grid columns="two">
           <Grid.Row>
             <Grid.Column width={10}>
@@ -21,13 +22,6 @@ class Landing extends Component {
                     <Icon name="right triangle" />
                     <List.Content>
                       <List.Header>Feature 1</List.Header>
-                      <List.Description>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Totam, praesentium at porro perspiciatis officiis
-                        sint fuga assumenda fugit odit rem animi reprehenderit
-                        quisquam magni. Delectus, aspernatur. Quisquam
-                        consectetur obcaecati sequi.
-                      </List.Description>
                     </List.Content>
                   </List.Item>
 
@@ -35,13 +29,6 @@ class Landing extends Component {
                     <Icon name="right triangle" />
                     <List.Content>
                       <List.Header>Feature 2</List.Header>
-                      <List.Description>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Totam, praesentium at porro perspiciatis officiis
-                        sint fuga assumenda fugit odit rem animi reprehenderit
-                        quisquam magni. Delectus, aspernatur. Quisquam
-                        consectetur obcaecati sequi.
-                      </List.Description>
                     </List.Content>
                   </List.Item>
 
@@ -49,27 +36,22 @@ class Landing extends Component {
                     <Icon name="right triangle" />
                     <List.Content>
                       <List.Header>Feature 3</List.Header>
-                      <List.Description>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Totam, praesentium at porro perspiciatis officiis
-                        sint fuga assumenda fugit odit rem animi reprehenderit
-                        quisquam magni. Delectus, aspernatur. Quisquam
-                        consectetur obcaecati sequi.
-                      </List.Description>
                     </List.Content>
                   </List.Item>
                 </List>
               </div>
             </Grid.Column>
 
-            <Grid.Column width={6}>
+            {/* <Grid.Column width={6}>
               <div className="right-side">
                 <Login />
               </div>
-            </Grid.Column>
+            </Grid.Column> */}
           </Grid.Row>
         </Grid>
-      </div>
+        // <Route exact path="/login" component={Login} />
+        // <Route exact path="/signup" component={Signup} />
+      // </Router>
     );
   }
 }
