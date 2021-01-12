@@ -5,13 +5,14 @@ import sys
 import csv
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import nlp
+import Ngram
 
 
 # Test URL https://www.usajobs.gov/GetJob/ViewDetails/576145500#locations
 
 def scrape():
-    url = input('Enter URL: ')
+    url = input('Enter Job URL to scrape: ')
     url = requests.get(url).text
     soup = BeautifulSoup(url, 'lxml')
 
@@ -102,7 +103,9 @@ def eda():
 
 if __name__ == '__main__':
     scrape()
-    import Ngram
+    input("Press Enter to perform NLP (Natural Language Processing)...")
+    nlp.perform_nlp()
+    input("Press Enter to generate a Resume...")
     Ngram.ngram()
     Ngram.generate()
-    eda()
+    # eda()
