@@ -1,0 +1,15 @@
+python
+pandas 
+numpy
+csv
+nltk
+sklearn
+random
+flask
+scraper
+Ngram
+nlp
+matplotlib
+sys
+requests
+bs4
