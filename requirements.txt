@@ -1,4 +1,4 @@
-python
+python==3.8
 pandas 
 numpy
 csv
